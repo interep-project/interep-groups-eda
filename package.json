@@ -33,6 +33,7 @@
     "tslib": "^2.4.1"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "concurrently": "^7.6.0",
     "nps": "^5.10.0",
     "yaml": "^2.1.3"

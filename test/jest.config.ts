@@ -5,7 +5,7 @@ const jestConfig: JestConfigWithTsJest = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**'],
   coverageDirectory: 'coverage',
-  coveragePathIgnorePatterns: ['src/index.ts'],
+  coveragePathIgnorePatterns: ['src/config.ts'],
   coverageThreshold: {
     global: {
       branches: 70,
