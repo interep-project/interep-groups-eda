@@ -38,11 +38,11 @@ scripts:
 
   start:
     default:
-      script: nps start.dev
-      description: Start in production mode
+      script: tsnd --cls --quiet  --transpile-only src
+      description: Start
     dev:
       script: tsnd --cls --exit-child --ignore-watch node_modules --quiet  --respawn --rs --transpile-only src
-      description: Start in dev mode
+      description: Start in dev mode (watch)
 
   test:
     default:
