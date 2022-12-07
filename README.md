@@ -21,4 +21,5 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 5. Sample is stored in `twitter.json`
 
 ## Data
+
 [twitter](./data/twitter.json)
