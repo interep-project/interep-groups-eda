@@ -20,6 +20,6 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 4. `nps "start <sample-size>"`
 5. Sample is stored in `twitter.json`
 
-## Data
+## Collected Samples
 
 [twitter](./data/twitter.json)
