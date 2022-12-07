@@ -1,13 +1,25 @@
-import { TEST } from '@mod/file'
+import { existsSync, mkdirSync } from 'fs'
 
-const A = [1, 2, 3]
+import { DATA_DIR } from './constants'
+import { twitter } from './Twitter'
 
-interface B {
-  foo: string
+const maybeCreateDir = () => {
+  if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR)
+}
+const main = async () => {
+  maybeCreateDir()
+
+  const sampleSize = Number(process.argv[2])
+
+  await twitter.loadUsers(sampleSize)
+  await twitter.writeUsers()
 }
 
-const c: B = { foo: 'bar' }
-
-console.log(A, c, TEST, 1)
-console.log(process.env.SECRET)
-console.log(process.env.FOO)
+main()
+  .then(() => {
+    process.exit(0)
+  })
+  .catch((e) => {
+    console.error(e)
+    process.exit(1)
+  })

@@ -1,26 +1,25 @@
-<div style='display: flex'>
-  <img alt='ts icon' width='50' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg'/>
-  <span style='font-weight: bold'>&nbsp;&nbsp<strong>PROJECT TEMPLATE</strong></span>
-</div>
-<br/>
+# Interep Groups Exploratory Data Analysis
 
-![Code Quality Status](https://img.shields.io/github/workflow/status/r1oga/ts-template/Code%20Quality?label=Code%20Quality)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/r1oga/ts-template/Snyk%20Security%20Check?label=Security%20%28Snyk%29)
-[![Coverage Status](https://coveralls.io/repos/github/r1oga/ts-template/badge.svg?branch=main)](https://coveralls.io/github/r1oga/ts-template?branch=main)  
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)  
-[![nps friendly](https://img.shields.io/badge/nps-friendly-blue.svg?style=flat-square)](https://github.com/sezna/nps)
+## Data
 
-| Feature                               | With                                                                                                                        | Configuration File                                                                                                                                                                                                                        |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Typings                               | [Typescript](https://www.typescriptlang.org/)                                                                               | [tsconfig.json](./tsconfig.json)                                                                                                                                                                                                          |
-| Scripts                               | [Nps](https://github.com/sezna/nps)                                                                                         | [package-scripts.yaml](./package-scripts.yaml)                                                                                                                                                                                            |
-| Testing                               | [Jest](https://jestjs.io/), [ts-jest](https://kulshekhar.github.io/ts-jest/)                                                | [jest.config.ts](test/jest.config.ts)                                                                                                                                                                                                     |
-| Coverage reports                      | [Coveralls](https://coveralls.io/)                                                                                          | [Coveralls GitHub Action](https://github.com/marketplace/actions/coveralls-github-action)                                                                                                                                                 |
-| Linting                               | [Eslint](https://eslint.org/)                                                                                               | [.eslintrc.yaml](./.eslintrc.yaml)                                                                                                                                                                                                        |
-| Formatting                            | [Prettier](https://prettier.io/)                                                                                            | [.prettierrc.yaml](./.prettierrc.yaml)                                                                                                                                                                                                    |
-| Continuous Integration                | [GitHub Workflow](https://docs.github.com/en/actions/using-workflows)                                                       | [.github/workflows](./.github/workflows)                                                                                                                                                                                                  |
-| Import aliases                        | [Typescript paths](https://www.typescriptlang.org/tsconfig#paths), [module-alias](https://github.com/ilearnio/module-alias) | [tsconfig.json](https://github.com/r1oga/ts-template/blob/5d6983a6d28429b9dd256edf40bad5ee48c33d9c/tsconfig.json#L26), [package.json](https://github.com/r1oga/ts-template/blob/5d6983a6d28429b9dd256edf40bad5ee48c33d9c/package.json#L9) |
-| Rollup exports                        | [Barrelsby](https://github.com/bencoveney/barrelsby)                                                                        | [.barrelsby.json](./.barrelsby.json)                                                                                                                                                                                                      |
-| Containerization                      | [Docker](https://www.docker.com/)                                                                                           | [Dockerfile](./Dockerfile), [docker-compose.yaml](./docker-compose.yaml)                                                                                                                                                                  |
-| Pre-commit hook (linting, formatting) | [Husky](https://typicode.github.io/husky), [lint-staged](https://github.com/okonet/lint-staged)                             | [pre-commit](./.husky/pre-commit), [.lintstagedrc.yaml](./.lintstagedrc.yaml)                                                                                                                                                             |
-| Security Checks                       | [Snyk](https://snyk.io/)                                                                                                    | [snyk.yaml](./.github/workflows/snyk.yaml)                                                                                                                                                                                                |
+Public user profiles on the Interep supported provider platforms (currently GitHub, Reddit, Twitter)
+
+## Objectives
+
+1. Collect a data sample of reasonable size: between 100-1000 public user profiles for each provider
+2. Evaluate the current shape of the reputation distribution for each provider/
+3. Define appropriate level thresholds so that the distribution is skewed from `undefined` to `gold`
+   Indeed common sense tells that there should be a lot of `undefined` or `bronze`, some `silver` but just a few `gold`.
+
+## Getting started
+
+1. Define your config settings in `.config.yaml`  
+   For twitter you'll need to get a bearer token from https://developer.twitter.com/en
+2. `npm add -g pnpm`
+3. `pnpm i`
+4. `nps "start <sample-size>"`
+5. Sample is stored in `twitter.json`
+
+## Data
+
+[twitter](./data/twitter.json)

@@ -9,4 +9,4 @@ coverage
 # JetBrains IDE
 .idea
 
-.env
+.config.yaml
