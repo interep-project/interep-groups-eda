@@ -1,5 +1,3 @@
-import { join } from 'path'
-
 import { Client } from 'twitter-api-sdk'
 
 import { config } from './config'
@@ -14,7 +12,7 @@ export class Twitter extends Provider<{
   client: Client
 
   constructor() {
-    super(join(__dirname, '..', 'twitter.json'))
+    super('twitter.json')
     this.client = new Client(config.twitter.bearerToken)
   }
 

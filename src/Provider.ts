@@ -1,15 +1,18 @@
 import { readFileSync, writeFileSync } from 'fs'
+import { join } from 'path'
 
-import { SAMPLE_SIZE } from './constants'
+import { DATA_DIR, SAMPLE_SIZE } from './constants'
 
 export abstract class Provider<U> {
   ids: string[]
+  file: string
   users: Array<U & { id: string }>
 
-  constructor(public file: string) {
+  constructor(filename: string) {
     const _users = this.getLocalUsers()
     this.users = _users
     this.ids = _users.map((user) => user.id)
+    this.file = join(DATA_DIR, filename)
   }
 
   getLocalUsers(): typeof this.users {
