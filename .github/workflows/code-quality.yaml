@@ -41,4 +41,4 @@ jobs:
         run: pnpm i --ignore-scripts --reporter=silent
 
       - name: Validate
-        run: pnpm run nps v
+        run: pnpm run nps v.ci

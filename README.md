@@ -12,6 +12,7 @@ Public user profiles on the Interep supported provider platforms (currently GitH
    Indeed common sense tells that there should be a lot of `undefined` or `bronze`, some `silver` but just a few `gold`.
 
 ## Getting started
+
 1. Define your config settings in `.config.yaml`  
    For twitter you'll need to get a bearer token from https://developer.twitter.com/en
 2. `npm add -g pnpm`
