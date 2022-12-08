@@ -6,13 +6,11 @@ import { twitter } from './Twitter'
 const maybeCreateDir = () => {
   if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR)
 }
+
 const main = async () => {
   maybeCreateDir()
-
   const sampleSize = Number(process.argv[2])
-
-  await twitter.loadUsers(sampleSize)
-  await twitter.writeUsers()
+  await twitter.writeUsers(sampleSize)
 }
 
 main()

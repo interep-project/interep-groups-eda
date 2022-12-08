@@ -18,8 +18,12 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 2. `npm add -g pnpm`
 3. `pnpm i`
 4. `nps "start <sample-size>"`
-5. Sample is stored in `twitter.json`
+5. Sample is stored in `data/twitter.json`
 
 ## Collected Samples
 
-[twitter](./data/twitter.json)
+| Provider |              File              | Size |
+|:--------:|:------------------------------:|:----:|
+|  GitHub  |        :calendar: TODO         |      |
+|  Reddit  |        :calendar: TODO         |      |
+| Twitter  | [twitter](./data/twitter.json) | 506  |
