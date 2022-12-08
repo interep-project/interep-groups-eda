@@ -7,6 +7,7 @@ const jestConfig: JestConfigWithTsJest = {
   preset: 'ts-jest',
   rootDir: '..',
   setupFilesAfterEnv: ['./test/setup.ts'],
+  testTimeout: 10000,
   verbose: true,
 }
 
