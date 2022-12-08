@@ -9,10 +9,10 @@ export abstract class Provider<U> {
   users: Array<U & { id: string }>
 
   constructor(filename: string) {
+    this.file = join(DATA_DIR, filename)
     const _users = this.getLocalUsers()
     this.users = _users
     this.ids = _users.map((user) => user.id)
-    this.file = join(DATA_DIR, filename)
   }
 
   getLocalUsers(): typeof this.users {
