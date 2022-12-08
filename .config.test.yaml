@@ -1,0 +1,9 @@
+github:
+  pat: ''
+  clientId: ''
+  clientSecret: ''
+reddit:
+  clientId: ''
+  clientSecret: ''
+twitter:
+  bearerToken: ''
