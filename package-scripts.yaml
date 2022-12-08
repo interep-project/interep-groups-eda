@@ -49,7 +49,7 @@ scripts:
       script: nps test.watch
       description: Run tests
     ci:
-      script: nps 'test.once --silent --reporters=jest-silent-reporter'
+      script: nps 'test.once --silent --reporters=jest-silent-reporter --testPathIgnorePatterns botometer' # ignore botometer test to avoid defining all the GH secrets
       hiddenFromHelp: true
     once:
       script: jest --config test/jest.config.ts
