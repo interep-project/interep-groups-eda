@@ -15,11 +15,8 @@ rules:
   '@typescript-eslint/ban-ts-comment': warn
   '@typescript-eslint/explicit-function-return-type': off
   '@typescript-eslint/return-await': off
-  import/order:
-    - warn
-    - newlines-between: always
   import/newline-after-import: warn
-  no-console: warn
+  no-console: off
   no-useless-constructor: warn
 env:
   'jest/globals': true
