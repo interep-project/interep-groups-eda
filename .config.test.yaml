@@ -1,0 +1,16 @@
+github:
+  pat: x
+  clientId: x
+  clientSecret: x
+reddit:
+  clientId: x
+  clientSecret: x
+twitter:
+  accessToken: x
+  accessTokenSecret: x
+  bearerToken: x
+  clientId: x
+  clientSecret: x
+  consumerKey: x
+  consumerSecret: x
+  rapidApiKey: x

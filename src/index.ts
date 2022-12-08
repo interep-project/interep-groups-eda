@@ -10,7 +10,7 @@ const maybeCreateDir = () => {
 const main = async () => {
   maybeCreateDir()
   const sampleSize = Number(process.argv[2])
-  await twitter.writeUsers(sampleSize)
+  await twitter.maybeWriteUsers(sampleSize)
 }
 
 main()

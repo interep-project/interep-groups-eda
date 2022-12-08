@@ -1,0 +1,977 @@
+{
+  "288": {
+    "cap": {
+      "english": 0.5539725719744064,
+      "universal": 0.8006881983123656
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0,
+        "fake_follower": 1,
+        "financial": 0,
+        "other": 1.6,
+        "overall": 0.6,
+        "self_declared": 0.4,
+        "spammer": 0.6
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 0.8,
+        "financial": 0.1,
+        "other": 1.2,
+        "overall": 1.8,
+        "self_declared": 0,
+        "spammer": 0.6
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.01,
+        "fake_follower": 0.19,
+        "financial": 0,
+        "other": 0.33,
+        "overall": 0.13,
+        "self_declared": 0.07,
+        "spammer": 0.12
+      },
+      "universal": {
+        "astroturf": 0.01,
+        "fake_follower": 0.17,
+        "financial": 0.02,
+        "other": 0.25,
+        "overall": 0.37,
+        "self_declared": 0,
+        "spammer": 0.12
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Fri May 19 22:18:23 +0000 2006",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 559,
+        "follow_request_sent": false,
+        "followers_count": 2674,
+        "following": false,
+        "friends_count": 136,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 288,
+        "id_str": "288",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 22,
+        "location": "",
+        "name": "Lars Kim",
+        "notifications": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": true,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/288/1389522574",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/344691160/Lars3D_normal.bmp",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/344691160/Lars3D_normal.bmp",
+        "profile_link_color": "CF4BBB",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "755E5C",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "solsken",
+        "statuses_count": 535,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "883": {
+    "cap": {
+      "english": 0.8076035454448582,
+      "universal": 0.8733944954488508
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.5,
+        "fake_follower": 3.6,
+        "financial": 1.3,
+        "other": 3.9,
+        "overall": 3.9,
+        "self_declared": 3.9,
+        "spammer": 3.8
+      },
+      "universal": {
+        "astroturf": 0.2,
+        "fake_follower": 3.2,
+        "financial": 0.8,
+        "other": 4.6,
+        "overall": 4.6,
+        "self_declared": 3.7,
+        "spammer": 4.5
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.1,
+        "fake_follower": 0.71,
+        "financial": 0.26,
+        "other": 0.78,
+        "overall": 0.78,
+        "self_declared": 0.78,
+        "spammer": 0.76
+      },
+      "universal": {
+        "astroturf": 0.03,
+        "fake_follower": 0.65,
+        "financial": 0.16,
+        "other": 0.91,
+        "overall": 0.91,
+        "self_declared": 0.74,
+        "spammer": 0.9
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Fri Jul 14 15:09:12 +0000 2006",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "you've been followed by this retarded account so go follow @jennalikesfood and @whalep00p to say thank you and @arianalegend",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 1,
+        "follow_request_sent": false,
+        "followers_count": 216,
+        "following": false,
+        "friends_count": 129,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 883,
+        "id_str": "883",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "hell ",
+        "name": "lukaku",
+        "notifications": false,
+        "profile_background_color": "9AE4E8",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": true,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/883/1372184284",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000045151765/cc7fdd3f9f8ca88b78cb7891a7d2d25e_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000045151765/cc7fdd3f9f8ca88b78cb7891a7d2d25e_normal.jpeg",
+        "profile_link_color": "0000FF",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "E0FF92",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "giancarlo696969",
+        "statuses_count": 9,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "6037": {
+    "cap": {
+      "english": 0.8021481695167405,
+      "universal": 0.8102129289660348
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.4,
+        "fake_follower": 3.4,
+        "financial": 1.2,
+        "other": 3.8,
+        "overall": 3.8,
+        "self_declared": 3,
+        "spammer": 2.4
+      },
+      "universal": {
+        "astroturf": 0.2,
+        "fake_follower": 3.8,
+        "financial": 1,
+        "other": 3.6,
+        "overall": 3.8,
+        "self_declared": 2.8,
+        "spammer": 2.7
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.07,
+        "fake_follower": 0.67,
+        "financial": 0.23,
+        "other": 0.75,
+        "overall": 0.75,
+        "self_declared": 0.61,
+        "spammer": 0.49
+      },
+      "universal": {
+        "astroturf": 0.04,
+        "fake_follower": 0.75,
+        "financial": 0.21,
+        "other": 0.71,
+        "overall": 0.75,
+        "self_declared": 0.57,
+        "spammer": 0.54
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Thu Sep 14 05:06:27 +0000 2006",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "Bay Area Kid, worked the valley, moved, worked in hawaii, moved worked in dot com, moved,",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 8,
+        "follow_request_sent": false,
+        "followers_count": 68,
+        "following": false,
+        "friends_count": 44,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 6037,
+        "id_str": "6037",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 2,
+        "location": "Now in the land Down Under",
+        "name": "Garvin Wu",
+        "notifications": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme5/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme5/bg.gif",
+        "profile_background_tile": false,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/6037/1463954868",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/14198302/gstar_normal.gif",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/14198302/gstar_normal.gif",
+        "profile_link_color": "4F13BF",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "99CC33",
+        "profile_text_color": "3E4415",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "gmatters",
+        "statuses_count": 28,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "21393": {
+    "cap": {
+      "english": 0.3342309004634953,
+      "universal": 0.6784864269642225
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.8,
+        "fake_follower": 0.6,
+        "financial": 0,
+        "other": 0.8,
+        "overall": 0.2,
+        "self_declared": 0.1,
+        "spammer": 0
+      },
+      "universal": {
+        "astroturf": 0.8,
+        "fake_follower": 0.3,
+        "financial": 0,
+        "other": 1.2,
+        "overall": 0.9,
+        "self_declared": 0,
+        "spammer": 0
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.15,
+        "fake_follower": 0.12,
+        "financial": 0,
+        "other": 0.16,
+        "overall": 0.05,
+        "self_declared": 0.02,
+        "spammer": 0
+      },
+      "universal": {
+        "astroturf": 0.17,
+        "fake_follower": 0.06,
+        "financial": 0.01,
+        "other": 0.24,
+        "overall": 0.18,
+        "self_declared": 0.01,
+        "spammer": 0.01
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Sat Nov 25 02:00:17 +0000 2006",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "Currently: @CatapultStory @CounterpointLLC @softskull. Previously: @AAKnopf @MarinerBooks @tumblr @HousingWorksBks @sixwords. Always: 📚🍲👧🏼🤷🏻‍♀️",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 116498,
+        "follow_request_sent": false,
+        "followers_count": 19611,
+        "following": false,
+        "friends_count": 2338,
+        "geo_enabled": true,
+        "has_extended_profile": false,
+        "id": 21393,
+        "id_str": "21393",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 388,
+        "location": "Brooklyn, NY",
+        "name": "Rachel Fershleiser",
+        "notifications": false,
+        "profile_background_color": "89C9FA",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": true,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/21393/1393875529",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1571609014546333699/Cxk1f3qy_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1571609014546333699/Cxk1f3qy_normal.jpg",
+        "profile_link_color": "0000FF",
+        "profile_sidebar_border_color": "87BC44",
+        "profile_sidebar_fill_color": "E0FF92",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "protected": false,
+        "screen_name": "RachelFersh",
+        "statuses_count": 9103,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "21703": {
+    "cap": {
+      "english": 0.9307543294922915,
+      "universal": 0.8963872382550993
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0,
+        "fake_follower": 3.8,
+        "financial": 2,
+        "other": 4.9,
+        "overall": 4.9,
+        "self_declared": 3.8,
+        "spammer": 1.6
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 3.2,
+        "financial": 1.4,
+        "other": 4.7,
+        "overall": 4.7,
+        "self_declared": 4.3,
+        "spammer": 2
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.01,
+        "fake_follower": 0.76,
+        "financial": 0.4,
+        "other": 0.98,
+        "overall": 0.98,
+        "self_declared": 0.76,
+        "spammer": 0.31
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 0.63,
+        "financial": 0.27,
+        "other": 0.94,
+        "overall": 0.94,
+        "self_declared": 0.86,
+        "spammer": 0.39
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Sat Nov 25 11:42:32 +0000 2006",
+        "default_profile": false,
+        "default_profile_image": true,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 18,
+        "following": false,
+        "friends_count": 0,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 21703,
+        "id_str": "21703",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "",
+        "name": "EMMANUEL",
+        "notifications": false,
+        "profile_background_color": "9AE4E8",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_link_color": "0000FF",
+        "profile_sidebar_border_color": "87BC44",
+        "profile_sidebar_fill_color": "E0FF92",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "EMMAlex",
+        "statuses_count": 2,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "15071544": {
+    "cap": {
+      "english": 1,
+      "universal": 1
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.1,
+        "fake_follower": 5,
+        "financial": 2,
+        "other": 4.9,
+        "overall": 5,
+        "self_declared": 2.8,
+        "spammer": 2
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 5,
+        "financial": 3.5,
+        "other": 3.8,
+        "overall": 5,
+        "self_declared": 4.2,
+        "spammer": 4.8
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.02,
+        "fake_follower": 1,
+        "financial": 0.39,
+        "other": 0.98,
+        "overall": 1,
+        "self_declared": 0.57,
+        "spammer": 0.41
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 1,
+        "financial": 0.7053454754310015,
+        "other": 0.7505952380952381,
+        "overall": 1,
+        "self_declared": 0.84,
+        "spammer": 0.9572588393599502
+      }
+    },
+    "user": {
+      "majority_lang": "fr",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Tue Jun 10 09:48:38 +0000 2008",
+        "default_profile": true,
+        "default_profile_image": true,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 0,
+        "following": false,
+        "friends_count": 0,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 15071544,
+        "id_str": "15071544",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "",
+        "name": "delvoicebot",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "delvoicebot",
+        "statuses_count": 1,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "42232736": {
+    "cap": {
+      "english": 0.797782173166965,
+      "universal": 0.8148417533461276
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.2,
+        "fake_follower": 3.2,
+        "financial": 0.8,
+        "other": 3.4,
+        "overall": 3.5,
+        "self_declared": 3.5,
+        "spammer": 3
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 3.9,
+        "financial": 1.6,
+        "other": 3.5,
+        "overall": 3.9,
+        "self_declared": 3.4,
+        "spammer": 3
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.04,
+        "fake_follower": 0.64,
+        "financial": 0.17,
+        "other": 0.69,
+        "overall": 0.7,
+        "self_declared": 0.7,
+        "spammer": 0.6
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 0.78,
+        "financial": 0.31464285714285717,
+        "other": 0.7,
+        "overall": 0.78,
+        "self_declared": 0.68,
+        "spammer": 0.61
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Sun May 24 16:00:27 +0000 2009",
+        "default_profile": true,
+        "default_profile_image": false,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 8,
+        "following": false,
+        "friends_count": 0,
+        "geo_enabled": false,
+        "has_extended_profile": true,
+        "id": 42232736,
+        "id_str": "42232736",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "England (UK)",
+        "name": "Andrew Weedall",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/305668531/capp_final_normal.JPG",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/305668531/capp_final_normal.JPG",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "AWeedall",
+        "statuses_count": 9,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "98979270": {
+    "cap": {
+      "english": 0.8595061719862279,
+      "universal": 0.9316498558718169
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.1,
+        "fake_follower": 4,
+        "financial": 1.2,
+        "other": 4.4,
+        "overall": 4.4,
+        "self_declared": 4.3,
+        "spammer": 4
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 4.4,
+        "financial": 1.4,
+        "other": 4.9,
+        "overall": 4.9,
+        "self_declared": 4.8,
+        "spammer": 3.2
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.02,
+        "fake_follower": 0.8,
+        "financial": 0.24,
+        "other": 0.89,
+        "overall": 0.89,
+        "self_declared": 0.86,
+        "spammer": 0.8
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 0.87,
+        "financial": 0.2894047619047619,
+        "other": 0.9866666666666666,
+        "overall": 0.9866666666666666,
+        "self_declared": 0.97,
+        "spammer": 0.6372964687463232
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Wed Dec 23 23:08:45 +0000 2009",
+        "default_profile": true,
+        "default_profile_image": true,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 0,
+        "following": false,
+        "friends_count": 0,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 98979270,
+        "id_str": "98979270",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 1,
+        "location": "",
+        "name": "Norris Krall",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "nekrall",
+        "statuses_count": 7,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "154073366": {
+    "cap": {
+      "english": 1,
+      "universal": 1
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.1,
+        "fake_follower": 5,
+        "financial": 2,
+        "other": 4.8,
+        "overall": 5,
+        "self_declared": 2.8,
+        "spammer": 2
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 5,
+        "financial": 3.5,
+        "other": 3.8,
+        "overall": 5,
+        "self_declared": 4.2,
+        "spammer": 4.8
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.02,
+        "fake_follower": 1,
+        "financial": 0.41,
+        "other": 0.97,
+        "overall": 1,
+        "self_declared": 0.57,
+        "spammer": 0.4
+      },
+      "universal": {
+        "astroturf": 0,
+        "fake_follower": 1,
+        "financial": 0.7053454754310015,
+        "other": 0.7505952380952381,
+        "overall": 1,
+        "self_declared": 0.84,
+        "spammer": 0.9572588393599502
+      }
+    },
+    "user": {
+      "majority_lang": "en",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Thu Jun 10 08:48:26 +0000 2010",
+        "default_profile": true,
+        "default_profile_image": true,
+        "description": "",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 0,
+        "follow_request_sent": false,
+        "followers_count": 3,
+        "following": false,
+        "friends_count": 1,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 154073366,
+        "id_str": "154073366",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "",
+        "name": "Hasan",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "amenaburhan",
+        "statuses_count": 1,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  },
+  "992752232": {
+    "cap": {
+      "english": 0.8287549877594508,
+      "universal": 0.82211302959919
+    },
+    "display_scores": {
+      "english": {
+        "astroturf": 0.3,
+        "fake_follower": 4,
+        "financial": 0.6,
+        "other": 4.2,
+        "overall": 4.2,
+        "self_declared": 3,
+        "spammer": 3.1
+      },
+      "universal": {
+        "astroturf": 0.2,
+        "fake_follower": 4.1,
+        "financial": 0.4,
+        "other": 4,
+        "overall": 4.1,
+        "self_declared": 3.4,
+        "spammer": 2.9
+      }
+    },
+    "raw_scores": {
+      "english": {
+        "astroturf": 0.06,
+        "fake_follower": 0.79,
+        "financial": 0.13,
+        "other": 0.84,
+        "overall": 0.84,
+        "self_declared": 0.61,
+        "spammer": 0.62
+      },
+      "universal": {
+        "astroturf": 0.04,
+        "fake_follower": 0.81,
+        "financial": 0.07,
+        "other": 0.8,
+        "overall": 0.81,
+        "self_declared": 0.67,
+        "spammer": 0.59
+      }
+    },
+    "user": {
+      "majority_lang": "ja",
+      "user_data": {
+        "contributors_enabled": false,
+        "created_at": "Thu Dec 06 09:54:05 +0000 2012",
+        "default_profile": true,
+        "default_profile_image": false,
+        "description": "ワンピース特にエース&ルフィに盲目(*ﾉ∀`*)Ｈ×Ｈ夏目も好きっすW",
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "favourites_count": 44,
+        "follow_request_sent": false,
+        "followers_count": 53,
+        "following": false,
+        "friends_count": 79,
+        "geo_enabled": false,
+        "has_extended_profile": false,
+        "id": 992752232,
+        "id_str": "992752232",
+        "is_translation_enabled": false,
+        "is_translator": false,
+        "lang": null,
+        "listed_count": 0,
+        "location": "ヾ(:3ﾉｼヾ)ﾉｼ",
+        "name": "マミ",
+        "notifications": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/992752232/1362239680",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3328746816/f13bf7a827bb2a35337af8acc38f7e34_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3328746816/f13bf7a827bb2a35337af8acc38f7e34_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "lsoivde6",
+        "statuses_count": 612,
+        "time_zone": null,
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": null,
+        "verified": false,
+        "withheld_in_countries": []
+      }
+    }
+  }
+}

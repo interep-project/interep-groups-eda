@@ -1,36 +1,13 @@
-import { readFileSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 import { join } from 'path'
 
 import YAML from 'yaml'
+import { Config } from 'types/config'
 
-export interface GhConfig {
-  pat: string
-  clientId: string
-  clientSecret: string
-}
+const path = join(__dirname, '..')
+const exists = existsSync(join(path, '.config.yaml'))
+const file = exists
+  ? join(path, '.config.yaml')
+  : join(path, '.config.test.yaml')
 
-export interface RdConfig {
-  clientId: string
-  clientSecret: string
-}
-
-export interface TwConfig {
-  clientId: string
-  clientSecret: string
-  consumerKey: string
-  consumerSecret: string
-  bearerToken: string
-  accessKey: string
-  accessSecret: string
-  rapidApiKey: string
-}
-
-export interface Config {
-  github: GhConfig
-  reddit: RdConfig
-  twitter: TwConfig
-}
-
-export const config: Config = YAML.parse(
-  readFileSync(join(__dirname, '..', '.config.yaml'), 'utf8'),
-)
+export const config: Config = YAML.parse(readFileSync(file, 'utf8'))

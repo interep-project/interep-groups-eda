@@ -1,57 +1,64 @@
+import delay from 'delay'
 import { readFileSync, writeFileSync } from 'fs'
+import ms from 'ms'
 import { join } from 'path'
 
 import { DATA_DIR, SAMPLE_SIZE } from './constants'
 
 export abstract class Provider<U> {
-  ids: string[]
-  file: string
-  users: Array<U & { id: string }>
+  path: string
+  users: { [id: string]: U }
 
-  constructor(filename: string) {
-    this.file = join(DATA_DIR, filename)
-    const _users = this.getLocalUsers()
-    this.users = _users
-    this.ids = _users.map((user) => user.id)
+  get ids() {
+    return Object.keys(this.users)
   }
 
-  getLocalUsers(): typeof this.users {
+  get size() {
+    return this.ids.length
+  }
+
+  constructor(public name: string) {
+    this.path = join(DATA_DIR, `${this.name}.json`)
+    this.users = this.readLocalUsers()
+  }
+
+  readLocalUsers(): typeof this.users {
     try {
-      return JSON.parse(readFileSync(this.file, 'utf8'))
+      return JSON.parse(readFileSync(this.path, 'utf8'))
     } catch (e) {
-      return []
+      return {}
     }
   }
 
   abstract randomIds(): string[]
 
-  abstract fetchUsers(ids: string[]): Promise<any>
+  abstract fetchUsers(): Promise<any | []>
 
-  abstract processUsers(data: { [key: string]: any }): void
-
-  async loadUsers(size = SAMPLE_SIZE) {
-    if (this.users.length >= size) {
-      console.log(
-        `${this.file} is already a data sample of size >= ${size} (${this.users.length})`,
-      )
-      return
-    }
-
-    while (this.users.length <= size) {
-      let data
+  async addUsers(size: number) {
+    while (this.size < size) {
+      let users
 
       try {
-        data = (await this.fetchUsers(this.randomIds())).data
+        users = await this.fetchUsers()
+        console.log(users)
+        this.users = { ...this.users, ...users }
       } catch (e) {
+        console.error(e)
         continue
+      } finally {
+        // throttle to avoid rate limit
+        await delay(ms('1s'))
       }
-
-      this.processUsers(data)
     }
   }
 
-  async writeUsers(size?: number) {
-    await this.loadUsers(size)
-    writeFileSync(this.file, JSON.stringify(this.users))
+  async maybeWriteUsers(size = SAMPLE_SIZE) {
+    if (this.size >= size) {
+      console.log(`Local sample is already of size >= ${size} (${this.size})`)
+      return
+    }
+
+    await this.addUsers(size)
+    writeFileSync(this.path, JSON.stringify(this.users))
   }
 }

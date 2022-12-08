@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`botometer fetches botometer scores for a list of usernames 1`] = `
+{
+  "cap": {
+    "english": 0.3342309004634953,
+    "universal": 0.3469210182245441,
+  },
+  "display_scores": {
+    "english": {
+      "astroturf": 0.2,
+      "fake_follower": 0,
+      "financial": 0,
+      "other": 0.4,
+      "overall": 0.2,
+      "self_declared": 0,
+      "spammer": 0,
+    },
+    "universal": {
+      "astroturf": 0.4,
+      "fake_follower": 0,
+      "financial": 0,
+      "other": 0.5,
+      "overall": 0.2,
+      "self_declared": 0,
+      "spammer": 0.1,
+    },
+  },
+  "raw_scores": {
+    "english": {
+      "astroturf": 0.03,
+      "fake_follower": 0.01,
+      "financial": 0.01,
+      "other": 0.08,
+      "overall": 0.05,
+      "self_declared": 0.01,
+      "spammer": 0,
+    },
+    "universal": {
+      "astroturf": 0.07,
+      "fake_follower": 0.01,
+      "financial": 0.01,
+      "other": 0.1,
+      "overall": 0.05,
+      "self_declared": 0,
+      "spammer": 0.02,
+    },
+  },
+  "user": {
+    "majority_lang": "en",
+    "user_data": {
+      "contributors_enabled": false,
+      "created_at": "Mon Feb 19 23:06:16 +0000 2018",
+      "default_profile": true,
+      "default_profile_image": false,
+      "description": "Web3 Engineer @ethereum @PrivacyScaling.      Prev: @exodus_io",
+      "entities": {
+        "description": {
+          "urls": [],
+        },
+        "url": {
+          "urls": [
+            {
+              "display_url": "github.com/r1oga",
+              "expanded_url": "https://github.com/r1oga",
+              "indices": [
+                0,
+                23,
+              ],
+              "url": "https://t.co/675lqgxQmM",
+            },
+          ],
+        },
+      },
+      "favourites_count": 1968,
+      "follow_request_sent": false,
+      "followers_count": 57,
+      "following": false,
+      "friends_count": 20,
+      "geo_enabled": false,
+      "has_extended_profile": false,
+      "id": 965724241726443500,
+      "id_str": "965724241726443520",
+      "is_translation_enabled": false,
+      "is_translator": false,
+      "lang": null,
+      "listed_count": 1,
+      "location": "🌐",
+      "name": "r1oga.eth | 🦇🔊",
+      "notifications": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/965724241726443520/1618155900",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1447288032688750599/uWSsm2zX_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1447288032688750599/uWSsm2zX_normal.jpg",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "protected": false,
+      "screen_name": "r1oga",
+      "statuses_count": 964,
+      "time_zone": null,
+      "translator_type": "none",
+      "url": "https://t.co/675lqgxQmM",
+      "utc_offset": null,
+      "verified": false,
+      "withheld_in_countries": [],
+    },
+  },
+}
+`;
+
+exports[`botometer fetches botometer scores for a list of usernames 2`] = `
+{
+  "cap": {
+    "english": 0.7053377817049258,
+    "universal": 0.8030212452554465,
+  },
+  "display_scores": {
+    "english": {
+      "astroturf": 0.3,
+      "fake_follower": 0.5,
+      "financial": 0,
+      "other": 1.6,
+      "overall": 1,
+      "self_declared": 0.2,
+      "spammer": 0.2,
+    },
+    "universal": {
+      "astroturf": 0.6,
+      "fake_follower": 0.4,
+      "financial": 0,
+      "other": 2.8,
+      "overall": 2,
+      "self_declared": 0,
+      "spammer": 0.1,
+    },
+  },
+  "raw_scores": {
+    "english": {
+      "astroturf": 0.06,
+      "fake_follower": 0.1,
+      "financial": 0.01,
+      "other": 0.33,
+      "overall": 0.21,
+      "self_declared": 0.04,
+      "spammer": 0.03,
+    },
+    "universal": {
+      "astroturf": 0.13,
+      "fake_follower": 0.08,
+      "financial": 0.01,
+      "other": 0.57,
+      "overall": 0.4,
+      "self_declared": 0.01,
+      "spammer": 0.02,
+    },
+  },
+  "user": {
+    "majority_lang": "en",
+    "user_data": {
+      "contributors_enabled": false,
+      "created_at": "Sun May 08 16:03:03 +0000 2011",
+      "default_profile": true,
+      "default_profile_image": false,
+      "description": "Ethereum
+
+Fable of the Dragon Tyrant (not mine but it's important): https://t.co/t3jaMRRrPs
+
+Abolish daylight savings time and leap seconds",
+      "entities": {
+        "description": {
+          "urls": [
+            {
+              "display_url": "youtube.com/watch?v=cZYNAD…",
+              "expanded_url": "https://www.youtube.com/watch?v=cZYNADOHhVY",
+              "indices": [
+                68,
+                91,
+              ],
+              "url": "https://t.co/t3jaMRRrPs",
+            },
+          ],
+        },
+        "url": {
+          "urls": [
+            {
+              "display_url": "vitalik.ca",
+              "expanded_url": "http://vitalik.ca",
+              "indices": [
+                0,
+                23,
+              ],
+              "url": "https://t.co/IHF9ic0Ejh",
+            },
+          ],
+        },
+      },
+      "favourites_count": 6741,
+      "follow_request_sent": false,
+      "followers_count": 4704830,
+      "following": true,
+      "friends_count": 351,
+      "geo_enabled": false,
+      "has_extended_profile": true,
+      "id": 295218901,
+      "id_str": "295218901",
+      "is_translation_enabled": false,
+      "is_translator": false,
+      "lang": null,
+      "listed_count": 31164,
+      "location": "Earth",
+      "name": "vitalik.eth",
+      "notifications": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/295218901/1638557376",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/977496875887558661/L86xyLF4_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/977496875887558661/L86xyLF4_normal.jpg",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "protected": false,
+      "screen_name": "VitalikButerin",
+      "statuses_count": 19252,
+      "time_zone": null,
+      "translator_type": "none",
+      "url": "https://t.co/IHF9ic0Ejh",
+      "utc_offset": null,
+      "verified": true,
+      "withheld_in_countries": [],
+    },
+  },
+}
+`;

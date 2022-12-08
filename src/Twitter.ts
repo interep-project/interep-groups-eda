@@ -1,55 +1,45 @@
+import { Botometer } from 'botometer'
 import { Client } from 'twitter-api-sdk'
 
 import { config } from './config'
 import { Provider } from './Provider'
-import { randomTwitterIds } from './utils'
+import { botometer, randomTwitterIds } from './utils'
 
 interface User {
+  id: string
+  botometer?: any
   public_metrics: any
   username: string
   verified: boolean
 }
 
 export class Twitter extends Provider<User> {
+  botometer: typeof Botometer
   client: Client
 
   constructor() {
-    super('twitter.json')
+    super('twitter')
     this.client = new Client(config.twitter.bearerToken)
+    this.botometer = botometer
   }
 
   randomIds() {
     return randomTwitterIds({ usedIds: this.ids })
   }
 
-  processUsers(data?: { [key: string]: any }) {
-    if (data !== undefined) {
-      const [users, ids] = data.reduce(
-        // @ts-expect-error
-        // eslint-disable-next-line @typescript-eslint/naming-convention
-        ([users, ids], { id, public_metrics, username, verified }) => {
-          // no users for this id
-          if (id === undefined) return [users, ids]
-
-          users.push({ id, ...public_metrics, username, verified })
-          ids.push(id)
-
-          console.log(users)
-          return [users, ids]
-        },
-        [[], []],
-      )
-
-      this.users.push(...users)
-      this.ids.push(...ids)
-    }
+  async fetchUsernames(ids: string[]) {
+    const { data } = await this.client.users.findUsersById({ ids })
+    return (
+      data?.reduce<string[]>((usernames, { username }) => {
+        if (username !== undefined) usernames.push(username)
+        return usernames
+      }, []) ?? []
+    )
   }
 
-  async fetchUsers(ids: string[]) {
-    return this.client.users.findUsersById({
-      ids,
-      'user.fields': ['public_metrics', 'verified'],
-    })
+  async fetchUsers() {
+    const usernames = await this.fetchUsernames(this.randomIds())
+    return this.botometer.getScores(usernames)
   }
 }
 
