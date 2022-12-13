@@ -6,6 +6,7 @@ import { join } from 'path'
 import { DATA_DIR, SAMPLE_SIZE } from './constants'
 
 export abstract class Provider<U> {
+  usedIds: string[]
   path: string
   users: { [id: string]: U }
 
@@ -20,6 +21,7 @@ export abstract class Provider<U> {
   constructor(public name: string) {
     this.path = join(DATA_DIR, `${this.name}.json`)
     this.users = this.readLocalUsers()
+    this.usedIds = [...this.ids]
   }
 
   readLocalUsers(): typeof this.users {

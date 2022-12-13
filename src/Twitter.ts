@@ -24,7 +24,9 @@ export class Twitter extends Provider<User> {
   }
 
   randomIds() {
-    return randomTwitterIds({ usedIds: this.ids })
+    const ids = randomTwitterIds({ usedIds: this.usedIds })
+    this.usedIds.push(...ids)
+    return ids
   }
 
   async fetchUsernames(ids: string[]) {
