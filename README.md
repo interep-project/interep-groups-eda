@@ -5,8 +5,8 @@
 Public user profiles on the Interep supported provider platforms (currently GitHub, Reddit, Twitter)
 
 - twitter: manual collecting of data
-- reddit: check https://files.pushshift.io/reddit/
-- github: ?
+- reddit: check https://files.pushshift.io/reddit ?
+- github: check https://towardsdatascience.com/i-scraped-more-than-1k-top-machine-learning-github-profiles-and-this-is-what-i-found-1ab4fb0c0474 ?
 
 ## Objectives
 
