@@ -68,3 +68,7 @@ scripts:
     ci:
       script: concurrently tsc 'nps format.ci' 'nps lint.ci' 'nps test.ci'
       hiddenFromHelp: true
+
+  viz:
+    twitter:
+      script: tsnd --cls src/viz/twitter.ts

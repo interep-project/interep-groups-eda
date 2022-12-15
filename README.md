@@ -26,8 +26,8 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 
 ## Collected Samples
 
-| Provider |              File              | Size |
-|:--------:|:------------------------------:|:----:|
-|  GitHub  |        :calendar: TODO         |      |
-|  Reddit  |        :calendar: TODO         |      |
-| Twitter  | [twitter](./data/twitter.json) | 552  |
+| Provider |              File              | Size | Result                               |
+|:--------:|:------------------------------:|:----:|--------------------------------------|
+|  GitHub  |        :calendar: TODO         |      |                                      |
+|  Reddit  |        :calendar: TODO         |      |                                      |
+| Twitter  | [twitter](./data/twitter.json) | 552  | ![twitter plot](./plots/twitter.png) |
