@@ -4,6 +4,10 @@
 
 Public user profiles on the Interep supported provider platforms (currently GitHub, Reddit, Twitter)
 
+- twitter: manual collecting of data
+- reddit: check https://files.pushshift.io/reddit/
+- github: ?
+
 ## Objectives
 
 1. Collect a data sample of reasonable size: between 100-1000 public user profiles for each provider
