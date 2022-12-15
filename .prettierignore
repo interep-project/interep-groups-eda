@@ -7,5 +7,10 @@ pnpm-lock.yaml
 README.md
 
 *.snap
+
 data
+plots
+
+normalize.py
+
 

@@ -1,6 +1,6 @@
 import { botometer } from '../src/utils'
 
-describe('botometer', () => {
+describe.skip('botometer', () => {
   it('fetches botometer scores for a list of usernames', async () => {
     const usernames = ['@r1oga', '@VitalikButerin']
     const scores = await botometer.getScores(usernames)
