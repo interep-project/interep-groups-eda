@@ -30,4 +30,4 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 |:--------:|:------------------------------:|:----:|
 |  GitHub  |        :calendar: TODO         |      |
 |  Reddit  |        :calendar: TODO         |      |
-| Twitter  | [twitter](./data/twitter.json) | 506  |
+| Twitter  | [twitter](./data/twitter.json) | 552  |
