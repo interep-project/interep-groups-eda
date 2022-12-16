@@ -4,7 +4,7 @@ import { Botometer as _Botometer } from 'botometer'
 import { config } from './config'
 
 export const randomTwitterIds = ({
-  size = 50,
+  size = 100,
   usedIds = [],
 }: {
   size?: number
@@ -32,6 +32,7 @@ class Botometer extends _Botometer {
   async getScores(usernames: string[]) {
     console.log(usernames)
     const scores = await super.getScores(usernames)
+    console.log(scores)
     return scores.reduce(
       (
         scores: { [x: string]: any },

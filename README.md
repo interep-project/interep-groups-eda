@@ -23,6 +23,8 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 3. `pnpm i`
 4. `nps "start <sample-size>"`
 5. Sample is stored in `data/twitter.json`
+6. Normalize json: `python normalize.py twitter`
+7. Create visualization: `nps viz.twitter`
 
 ## Collected Samples
 
@@ -30,4 +32,4 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 |:--------:|:------------------------------:|:----:|--------------------------------------|
 |  GitHub  |        :calendar: TODO         |      |                                      |
 |  Reddit  |        :calendar: TODO         |      |                                      |
-| Twitter  | [twitter](./data/twitter.json) | 552  | ![twitter plot](./plots/twitter.png) |
+| Twitter  | [twitter](./data/twitter.json) | 908  | ![twitter plot](./plots/twitter.png) |
