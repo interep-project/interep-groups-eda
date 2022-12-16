@@ -6,7 +6,9 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 
 - twitter: manual collecting of data
 - reddit: check https://files.pushshift.io/reddit ?
-- github: check https://towardsdatascience.com/i-scraped-more-than-1k-top-machine-learning-github-profiles-and-this-is-what-i-found-1ab4fb0c0474 ?
+- github:
+  check https://towardsdatascience.com/i-scraped-more-than-1k-top-machine-learning-github-profiles-and-this-is-what-i-found-1ab4fb0c0474
+  ?
 
 ## Objectives
 
@@ -28,8 +30,9 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 
 ## Collected Samples
 
-| Provider |              File              | Size | Result                               |
-|:--------:|:------------------------------:|:----:|--------------------------------------|
-|  GitHub  |        :calendar: TODO         |      |                                      |
-|  Reddit  |        :calendar: TODO         |      |                                      |
-| Twitter  | [twitter](./data/twitter.json) | 908  | ![twitter plot](./plots/twitter.png) |
+|        Provider        |              File              |  Size  | Result                               |
+|:----------------------:|:------------------------------:|:------:|--------------------------------------|
+|         GitHub         |        :calendar: TODO         |        |                                      |
+| Reddit - Comment Karma |        :calendar: TODO         | 236992 |                                      |
+|  Reddit - Link Karma   |        :calendar: TODO         | 236992 |                                      |
+|        Twitter         | [twitter](./data/twitter.json) |  908   | ![twitter plot](./plots/twitter.png) |

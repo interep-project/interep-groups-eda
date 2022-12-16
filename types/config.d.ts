@@ -7,6 +7,8 @@ export interface GhConfig {
 export interface RdConfig {
   clientId: string
   clientSecret: string
+  password: string
+  username: string
 }
 
 export interface TwConfig {
