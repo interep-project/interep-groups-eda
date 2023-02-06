@@ -7,3 +7,5 @@ node_modules
 .bigquery-eda-key.json
 
 .env
+.ipynb_checkpoints
+
