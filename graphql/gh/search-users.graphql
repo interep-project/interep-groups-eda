@@ -1,0 +1,28 @@
+query($ids:[ID!]!) {
+    nodes(ids:$ids) {
+        ... on User {
+            databaseId
+            login
+            followers {
+                totalCount
+            }
+            contributionsCollection {
+                contributionCalendar {
+                    totalContributions
+                }
+            }
+            issues {
+                totalCount
+            }
+            pullRequests {
+                totalCount
+            }
+            sponsors {
+                totalCount
+            }
+            sponsoring {
+                totalCount
+            }
+        }
+    }
+}

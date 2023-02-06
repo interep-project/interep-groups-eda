@@ -4,3 +4,6 @@ node_modules
 .idea
 
 .config.yaml
+.bigquery-eda-key.json
+
+.env

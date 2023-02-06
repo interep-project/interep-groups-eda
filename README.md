@@ -31,5 +31,5 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 | Provider |              File              | Size | Result                               |
 |:--------:|:------------------------------:|:----:|--------------------------------------|
 |  GitHub  |        :calendar: TODO         |      |                                      |
-|  Reddit  |        :calendar: TODO         |      |                                      |
+|  Reddit  |        :calendar: TODO         |      |  https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc                                    |
 | Twitter  | [twitter](./data/twitter.json) | 908  | ![twitter plot](./plots/twitter.png) |
