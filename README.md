@@ -17,6 +17,7 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 
 ## Getting started
 
+### Twitter scripts
 1. Define your config settings in `.config.yaml`  
    For twitter you'll need to get a bearer token from https://developer.twitter.com/en
 2. `npm add -g pnpm`
@@ -26,10 +27,14 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 6. Normalize json: `python normalize.py twitter`
 7. Create visualization: `nps viz.twitter`
 
+### GitHub scripts
+Direct connection to a bigquery data in jupyter notebook.
+Node script similar to Twitter's for other GitHub stats.
+
 ## Collected Samples
 
-| Provider |              File              | Size | Result                               |
-|:--------:|:------------------------------:|:----:|--------------------------------------|
-|  GitHub  |        :calendar: TODO         |      |                                      |
-|  Reddit  |        :calendar: TODO         |      |  https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc                                    |
-| Twitter  | [twitter](./data/twitter.json) | 908  | ![twitter plot](./plots/twitter.png) |
+| Provider |                     File(s)                     |                                Size                                | Result(s)                                                                                  |
+|:--------:|:-----------------------------------------------:|:------------------------------------------------------------------:|--------------------------------------------------------------------------------------------|
+|  GitHub  | [gh-user-stats.json](./data/gh-user-stats.json) | 1.7M users for received stars, 1000 users profiles for other stats | See [gh-stars.ipynb](eda/gh-stars.ipynb), [gh-other-stats.ipynb](eda/gh-other-stats.ipynb) |
+|  Reddit  |                 :calendar: TODO                 |                                                                    |                                                                                            |
+| Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](eda/gh-starstwitter.ipynb)                                             |
