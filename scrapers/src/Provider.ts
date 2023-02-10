@@ -42,8 +42,6 @@ export abstract class Provider<U> {
     }
   }
 
-  abstract randomIds(): string[]
-
   abstract fetchUsers(): Promise<any | []>
 
   async addUsers(size: number) {
