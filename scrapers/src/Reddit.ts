@@ -11,25 +11,32 @@ export class Reddit extends Provider<any> {
     super('reddit')
   }
 
-  async fetchUsers(): Promise<any> {
-    return Promise.resolve(undefined)
+  private async auth(): Promise<void> {
+    try {
+      const response = await http('https://www.reddit.com/api/v1/access_token')
+        .addon(FormUrlAddon)
+        .formUrl({
+          device_id: 'DO_NOT_TRACK_THIS_DEVICE',
+          grant_type: 'https://oauth.reddit.com/grants/installed_client',
+        })
+        .auth(
+          `Basic ${Buffer.from(
+            `${config.reddit.clientId}:${config.reddit.clientSecret}`,
+          ).toString('base64')}`,
+        )
+        .post()
+
+      // @ts-expect-error
+      if (response.error === undefined) {
+        // @ts-expect-error
+        this.token = response.access_token
+      }
+    } catch (err) {
+      console.log(err)
+    }
   }
 
-  // async randomAuthors(): Promise<any> {
-  //     try {
-  //
-  //     const res = await fetch('https://www.reddit.com/r/random.json')
-  //     const json = await res.json()
-  //     console.log(res)
-  //     // @ts-expect-error
-  //     return json.data.children.slice(0, 10).map((child: { data: { author: string } }) => child.data.author)
-  //     } catch (err) {
-  //         console.log(err)
-  //         return []
-  //     }
-  // }
-
-  private async get_request(
+  private async authed_get_request(
     path: string,
     query?: Record<string, any>,
   ): Promise<any> {
@@ -49,37 +56,28 @@ export class Reddit extends Provider<any> {
     )
   }
 
-  private async auth(): Promise<void> {
-    const authorization = Buffer.from(
-      `${config.reddit.clientId}:${config.reddit.clientSecret}`,
-    ).toString('base64')
-    console.log({ authorization })
+  async randomAuthors(): Promise<any> {
     try {
-      const response = await http('https://www.reddit.com/api/v1/access_token')
-        .addon(FormUrlAddon)
-        .formUrl(
-          new URLSearchParams({
-            device_id: 'DO_NOT_TRACK_THIS_DEVICE',
-            grant_type: 'https://oauth.reddit.com/grants/installed_client',
-          }),
-        )
-        .auth(
-          `Basic ${Buffer.from(
-            `${config.reddit.clientId}:${config.reddit.clientSecret}`,
-          ).toString('base64')}`,
-        )
-        .post()
-      // @ts-expect-error
-      if (response.error === undefined) {
-        // @ts-expect-error
-        this.token = response.access_token
-      }
+      const json = await this.get_random_subreddit()
+      return (json?.data?.children ?? []).map(
+        (child: { data: { author: string } }) => child.data.author,
+      )
     } catch (err) {
       console.log(err)
+      return []
     }
   }
 
-  async get_random_subreddit(): Promise<string> {
-    return await this.get_request('r/random.json')
+  private async fetchUser(username: string): Promise<any> {
+    return (await this.authed_get_request(`user/${username}/about`)).data
+  }
+
+  async fetchUsers(): Promise<any> {
+    const authors = await this.randomAuthors()
+    return Promise.all(authors.map(this.fetchUser.bind(this)))
+  }
+
+  private async get_random_subreddit(): Promise<any> {
+    return http('https://www.reddit.com/r/random.json').get()
   }
 }
