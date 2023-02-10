@@ -46,7 +46,7 @@ export abstract class Provider<U> {
 
   async addUsers(size: number) {
     while (this.size < size) {
-      console.log({ size: this.size })
+      console.log({ size: this.size, targetSize: size })
       let users
 
       try {

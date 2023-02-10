@@ -69,15 +69,19 @@ export class Reddit extends Provider<any> {
   }
 
   private async fetchUser(username: string): Promise<any> {
-    return (await this.authed_get_request(`user/${username}/about`)).data
+    const user = await this.authed_get_request(`user/${username}/about`)
+    return { [user.data.name]: user.data }
   }
 
-  async fetchUsers(): Promise<any> {
+  async fetchUsers(): Promise<any[]> {
     const authors = await this.randomAuthors()
-    return Promise.all(authors.map(this.fetchUser.bind(this)))
+    const users = await  Promise.all(authors.map(this.fetchUser.bind(this)))
+    return users.reduce((acc, user) => ({ ...acc, ...user }), {})
   }
 
   private async get_random_subreddit(): Promise<any> {
     return http('https://www.reddit.com/r/random.json').get()
   }
 }
+
+export const reddit = new Reddit()
