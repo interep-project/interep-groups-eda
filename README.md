@@ -35,6 +35,6 @@ Node script similar to Twitter's for other GitHub stats.
 
 | Provider |                     File(s)                     |                                Size                                | Result(s)                                                                          |
 |:--------:|:-----------------------------------------------:|:------------------------------------------------------------------:|------------------------------------------------------------------------------------|
-|  GitHub  | [gh-user-stats.json](./data/gh-user-stats.json) | 1.7M users for received stars, 1000 users profiles for other stats | See [gh-stars.ipynb](eda/gh-stars.ipynb), [gh-other-stats.ipynb](eda/gh-other-stats.ipynb) |
+|  GitHub  | [gh-user-stats.json](./data/gh-user-stats.json) | 1.7M users for received stars, 1000 users profiles for other stats | See [gh-stars.ipynb](notebooks/gh-stars.ipynb), [gh-other-stats.ipynb](notebooks/gh-other-stats.ipynb) |
 |  Reddit  |                 :calendar: TODO                 |                                                                    |                                                                                    |
-| Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](eda/twitter.ipynb)                                             |
+| Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](notebooks/twitter.ipynb)                                             |

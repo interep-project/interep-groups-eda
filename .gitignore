@@ -8,5 +8,5 @@ node_modules
 
 .env
 
-/eda/.ipynb_checkpoints/
+/notebooks/.ipynb_checkpoints/
 

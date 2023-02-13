@@ -42,13 +42,11 @@ export abstract class Provider<U> {
     }
   }
 
-  abstract randomIds(): string[]
-
   abstract fetchUsers(): Promise<any | []>
 
   async addUsers(size: number) {
     while (this.size < size) {
-      console.log({ size: this.size })
+      console.log({ size: this.size, targetSize: size })
       let users
 
       try {
