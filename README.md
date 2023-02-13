@@ -4,9 +4,7 @@
 
 Public user profiles on the Interep supported provider platforms (currently GitHub, Reddit, Twitter)
 
-- twitter: manual collecting of data
-- reddit: check https://files.pushshift.io/reddit ?
-- github: check https://towardsdatascience.com/i-scraped-more-than-1k-top-machine-learning-github-profiles-and-this-is-what-i-found-1ab4fb0c0474 ?
+- twitter, reddit, github: manual collecting of data via public APIs
 
 ## Objectives
 
@@ -33,8 +31,8 @@ Node script similar to Twitter's for other GitHub stats.
 
 ## Collected Samples
 
-| Provider |                     File(s)                     |                                Size                                | Result(s)                                                                          |
-|:--------:|:-----------------------------------------------:|:------------------------------------------------------------------:|------------------------------------------------------------------------------------|
+| Provider |                     File(s)                     |                                Size                                | Result(s)                                                                                              |
+|:--------:|:-----------------------------------------------:|:------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------------|
 |  GitHub  | [gh-user-stats.json](./data/gh-user-stats.json) | 1.7M users for received stars, 1000 users profiles for other stats | See [gh-stars.ipynb](notebooks/gh-stars.ipynb), [gh-other-stats.ipynb](notebooks/gh-other-stats.ipynb) |
-|  Reddit  |                 :calendar: TODO                 |                                                                    |                                                                                    |
-| Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](notebooks/twitter.ipynb)                                             |
+|  Reddit  |        [reddit.json](./data/reddit.json)        |                                1013                                | See [reddit.ipynb](notebooks/reddit.ipynb)                                                             |
+| Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](notebooks/twitter.ipynb)                                                           |
