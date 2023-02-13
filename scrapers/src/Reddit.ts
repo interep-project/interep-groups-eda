@@ -1,8 +1,8 @@
-import { config } from './config'
-import { Provider } from './Provider'
 import FormUrlAddon from 'wretch/addons/formUrl'
-
+import { config } from './config'
 import { http } from './http'
+
+import { Provider } from './Provider'
 
 export class Reddit extends Provider<any> {
   private token: string | undefined
@@ -75,7 +75,7 @@ export class Reddit extends Provider<any> {
 
   async fetchUsers(): Promise<any[]> {
     const authors = await this.randomAuthors()
-    const users = await  Promise.all(authors.map(this.fetchUser.bind(this)))
+    const users = await Promise.all(authors.map(this.fetchUser.bind(this)))
     return users.reduce((acc, user) => ({ ...acc, ...user }), {})
   }
 
