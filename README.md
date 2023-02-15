@@ -36,3 +36,23 @@ Node script similar to Twitter's for other GitHub stats.
 |  GitHub  | [gh-user-stats.json](./data/gh-user-stats.json) | 1.7M users for received stars, 1000 users profiles for other stats | See [gh-stars.ipynb](notebooks/gh-stars.ipynb), [gh-other-stats.ipynb](notebooks/gh-other-stats.ipynb) |
 |  Reddit  |        [reddit.json](./data/reddit.json)        |                                1013                                | See [reddit.ipynb](notebooks/reddit.ipynb)                                                             |
 | Twitter  |       [twitter.json](./data/twitter.json)       |                                908                                 | See [twitter.ipynb](notebooks/twitter.ipynb)                                                           |
+
+## Reputation
+Specific reputation algorithms for each provider were defined empirically based on data analysis.  
+Tiers names are: commoner, up-and-coming, established, star and icon.
+
+### Twitter
+
+### Reddit
+- if gold status
+  - total karma  < 10k: up-and-coming
+  - total karma  < 50k: up-and-coming
+  - total karma  < 200k: established
+  - total karma  < 600k: star
+  - total karma  <= 600k: icon
+- if no gold status
+  - total karma  < 10k: commoner
+  - total karma  < 50k: up-and-coming
+  - total karma  < 200k: established
+  - total karma  < 600k: star
+  - total karma  <= 600k: icon
