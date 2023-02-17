@@ -13,10 +13,10 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 3. Define appropriate level thresholds so that the distribution is skewed from `undefined` to `gold`
    Indeed common sense tells that there should be a lot of `undefined` or `bronze`, some `silver` but just a few `gold`.
 
-## Getting started
-
-### Twitter scripts
-1. Define your config settings in `.config.yaml`  
+## Scripts
+Data was collected running scripts defined in `/scrapers` (see [index.ts](./scrapers/src/index.ts)).  
+Example for Twitter:
+1. Define your config settings in `.config.yaml`
    For twitter you'll need to get a bearer token from https://developer.twitter.com/en
 2. `npm add -g pnpm`
 3. `pnpm i`
@@ -24,10 +24,6 @@ Public user profiles on the Interep supported provider platforms (currently GitH
 5. Sample is stored in `data/twitter.json`
 6. Normalize json: `python normalize.py twitter`
 7. Create visualization: `nps viz.twitter`
-
-### GitHub scripts
-Direct connection to a bigquery data in jupyter notebook.
-Node script similar to Twitter's for other GitHub stats.
 
 ## Collected Samples
 
