@@ -43,16 +43,25 @@ Tiers names are: commoner, up-and-coming, established, star and icon.
 
 ### Twitter
 
+|followers|< 100|< 1k|< 10k|< 100k|>= 100k|
+|:-----------------:|:--:|:---:|:----:|:----:|:-----:|
+|is likely bot (botometer `cap` >= 0.95)|commoner|commoner|commoner|commoner|commoner|
+|is likely not bot (botometer `cap` < 0.95) & not verified|commoner|up-and-coming|established|star|icon|
+|is likely not bot (botometer `cap` < 0.95) & not verified|commoner|up-and-coming|established|star|icon|
+|is likely not bot (botometer `cap` < 0.95) & verified|established|established|established|star|icon|
+
+#### Tiers distribution simulation results
+![img.png](plots/twitter/twitter_rep_sim_final.png)
+
 ### Reddit
-- if gold status
-  - total karma  < 10k: up-and-coming
-  - total karma  < 50k: up-and-coming
-  - total karma  < 200k: established
-  - total karma  < 600k: star
-  - total karma  <= 600k: icon
-- if no gold status
-  - total karma  < 10k: commoner
-  - total karma  < 50k: up-and-coming
-  - total karma  < 200k: established
-  - total karma  < 600k: star
-  - total karma  <= 600k: icon
+
+|total karma|< 2k|< 20k|< 100k|< 200k|>= 200k|
+|:-----------------:|:--:|:---:|:----:|:----:|:-----:|
+|is gold|up-and-coming|up-and-coming|established|star|icon|
+|is not gold|commoner|up-and-coming|established|star|icon|
+
+#### Tiers distribution simulation results
+![img.png](plots/reddit/reddit_final.png)
+
+### GitHub
+TODO
