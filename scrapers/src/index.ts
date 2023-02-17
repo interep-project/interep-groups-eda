@@ -15,8 +15,8 @@ const main = async () => {
   let sampleSize
   if (process.argv[2] !== undefined) sampleSize = Number(process.argv[2])
   await reddit.maybeWriteUsers(sampleSize)
-
   // await github.maybeWriteUsers()
+  // await twitter.maybeWriteUsers()
 }
 
 main()
