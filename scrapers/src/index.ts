@@ -2,8 +2,8 @@ import { existsSync, mkdirSync } from 'fs'
 
 import { DATA_DIR } from './constants'
 // import { twitter } from './Twitter'
-// import { github } from './Github'
-import { reddit } from './Reddit'
+import { github } from './Github'
+// import { reddit } from './Reddit'
 
 const maybeCreateDir = () => {
   if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR)
@@ -14,9 +14,9 @@ const main = async () => {
 
   let sampleSize
   if (process.argv[2] !== undefined) sampleSize = Number(process.argv[2])
-  await reddit.maybeWriteUsers(sampleSize)
-  // await github.maybeWriteUsers()
-  // await twitter.maybeWriteUsers()
+  // await reddit.maybeWriteUsers(sampleSize)
+  await github.maybeWriteUsers(sampleSize)
+  // await twitter.maybeWriteUsers(sampleSize)
 }
 
 main()

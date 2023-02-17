@@ -21,7 +21,7 @@ export class Github extends Provider<any> {
   }
 
   constructor() {
-    super('gh-user-stats')
+    super('gh')
     ok(process.env.GH_PAT, 'GH_PAT is not defined')
     const PaginatedOctokit = Octokit.plugin(paginateGraphql)
     this.client = new PaginatedOctokit({ auth: process.env.GH_PAT })
@@ -35,12 +35,13 @@ export class Github extends Provider<any> {
       : [startId.toString()]
   }
 
-  async fetchUserNodeIds(usedIds: string[] = []): Promise<string[]> {
+  async fetchUserNodeIds(): Promise<string[]> {
     const [since] = this.randomIds()
     const users = await this.client.rest.users.list({
       per_page: 100,
       since: Number(since),
     })
+    // console.log(since, users)
     return users.data.map((user) => user.node_id)
   }
 
@@ -54,17 +55,21 @@ export class Github extends Provider<any> {
         pullRequests: number
         sponsoring: number
         sponsors: number
+        stars: number
+        forks: number
         totalContributions: number
       }
     >
   > {
-    const ids = await this.fetchUserNodeIds(this.usedIds)
+    const ids = await this.fetchUserNodeIds()
     let data: any[]
 
     try {
       // @ts-expect-error
       data = (await this.client.graphql(getUserQuery, { ids }))?.nodes
+      // console.log(data)
     } catch (error) {
+      // console.log(error);
       // @ts-expect-error
       data = error.data?.nodes
     }
@@ -82,19 +87,37 @@ export class Github extends Provider<any> {
               sponsoring: number
               sponsors: number
               totalContributions: number
+              forks: number
+              stars: number
             }
           >
         >((users, user) => {
           if (user === null) return users
-          const login = user?.login
           const followers = user?.followers?.totalCount
-          const totalContributions =
-            user?.contributionsCollection?.contributionCalendar
-              ?.totalContributions
           const issues = user?.issues?.totalCount
+          const login = user?.login
           const pullRequests = user.pullRequests?.totalCount
           const sponsors = user?.sponsors?.totalCount
           const sponsoring = user?.sponsoring?.totalCount
+          const totalContributions =
+            user?.contributionsCollection?.contributionCalendar
+              ?.totalContributions
+
+          const { forks, stars } = (
+            (user?.repositories?.nodes as Array<{
+              stargazerCount: number
+              forkCount: number
+            }>) ?? []
+          ).reduce(
+            (acc, { forkCount, stargazerCount }) => ({
+              forks: acc.forks + forkCount,
+              stars: acc.stars + stargazerCount,
+            }),
+            {
+              forks: 0,
+              stars: 0,
+            },
+          )
 
           if (
             ![
@@ -109,11 +132,13 @@ export class Github extends Provider<any> {
           )
             users[login] = {
               followers,
+              forks,
               issues,
               login,
               pullRequests,
               sponsoring,
               sponsors,
+              stars,
               totalContributions,
             }
 

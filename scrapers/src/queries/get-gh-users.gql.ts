@@ -2,7 +2,6 @@ export const getUserQuery = `query($ids:[ID!]!) {
     nodes(ids:$ids) {
         ... on User {
             login
-            databaseId
             followers {
                 totalCount
             }
@@ -23,7 +22,12 @@ export const getUserQuery = `query($ids:[ID!]!) {
             sponsoring {
                 totalCount
             }
-
+            repositories(first: 10) {
+                nodes {
+                    stargazerCount
+                    forkCount
+                }
+            }
         }
     }
 }
