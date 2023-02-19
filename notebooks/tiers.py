@@ -9,7 +9,7 @@ TIERS = {0: {'color': 'white', 'name': 'commoner'},
          4: {'color': 'red', 'name': 'icon'}}
 
 
-def get_followers_bin(x, bins):
+def get_bin(x, bins):
     for index, (m, M) in enumerate(bins):
         if m <= x < M:
             return index
