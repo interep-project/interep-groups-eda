@@ -1,3 +1,4 @@
+// @ts-expect-error
 import FormUrlAddon from 'wretch/addons/formUrl'
 import { config } from './config'
 import { http } from './http'
@@ -26,9 +27,7 @@ export class Reddit extends Provider<any> {
         )
         .post()
 
-      // @ts-expect-error
       if (response.error === undefined) {
-        // @ts-expect-error
         this.token = response.access_token
       }
     } catch (err) {

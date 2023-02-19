@@ -1,7 +1,6 @@
 query($ids:[ID!]!) {
     nodes(ids:$ids) {
         ... on User {
-            databaseId
             login
             followers {
                 totalCount
@@ -17,6 +16,14 @@ query($ids:[ID!]!) {
             pullRequests {
                 totalCount
             }
+
+            repositories(first: 10) {
+                nodes {
+                    stargazerCount,
+                    forkCount
+                }
+            }
+
             sponsors {
                 totalCount
             }
