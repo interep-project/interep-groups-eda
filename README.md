@@ -35,29 +35,35 @@ Example for Twitter:
 
 ## Reputation
 Specific reputation algorithms for each provider were defined empirically based on data analysis.  
-Tiers names are: commoner, up-and-coming, established, star and icon.
+**There are 5 tiers: commoner, up-and-coming, established, star and icon.**
 
 ### Twitter
 
-|followers|< 100|< 1k|< 10k|< 100k|>= 100k|
-|:-----------------:|:--:|:---:|:----:|:----:|:-----:|
-|is likely bot (botometer `cap` >= 0.95)|commoner|commoner|commoner|commoner|commoner|
-|is likely not bot (botometer `cap` < 0.95) & not verified|commoner|up-and-coming|established|star|icon|
-|is likely not bot (botometer `cap` < 0.95) & not verified|commoner|up-and-coming|established|star|icon|
-|is likely not bot (botometer `cap` < 0.95) & verified|established|established|established|star|icon|
+|followers|    < 100    |< 1k|< 10k|< 100k|  100k+   |
+|:-----------------:|:-----------:|:---:|:----:|:----:|:--------:|
+|is likely bot (botometer `cap` >= 0.95)|  commoner   |commoner|commoner|commoner| commoner |
+|is likely not bot (botometer `cap` < 0.95) & not verified|  commoner   |up-and-coming|established|star|   icon   |
+|is likely not bot (botometer `cap` < 0.95) & not verified|  commoner   |up-and-coming|established|star|   icon   |
+|is likely not bot (botometer `cap` < 0.95) & verified| established |established|established|star|   icon   |
 
 #### Tiers distribution simulation results
 ![img.png](plots/twitter/twitter_rep_sim_final.png)
 
 ### Reddit
 
-|total karma|< 2k|< 20k|< 100k|< 200k|>= 200k|
-|:-----------------:|:--:|:---:|:----:|:----:|:-----:|
-|is gold|up-and-coming|up-and-coming|established|star|icon|
-|is not gold|commoner|up-and-coming|established|star|icon|
+|total karma|     < 2k      |< 20k|< 100k|< 200k| 200k+ |
+|:-----------------:|:-------------:|:---:|:----:|:----:|:-----:|
+|is gold| up-and-coming |up-and-coming|established|star| icon  |
+|is not gold|   commoner    |up-and-coming|established|star| icon  |
 
 #### Tiers distribution simulation results
 ![img.png](plots/reddit/reddit_final.png)
 
 ### GitHub
-TODO
+
+|               stars                |       0       |       <10       |     < 100     |  < 1000  |  1000+  |
+|:----------------------------------:|:-------------:|:---------------:|:-------------:|:--------:|:-------:|
+|  neither sponsored nor sponsoring  |   commoner    |  up-and-coming  |  established  |   star   |  icon   |
+|       sponsors or sponsoring       |  established  |   established   |  established  |   star   |  icon   |
+
+![img.png](plots/github/reputation_final.png)
