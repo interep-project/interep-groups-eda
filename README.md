@@ -35,7 +35,7 @@ Example for Twitter:
 
 ## Reputation
 Specific reputation algorithms for each provider were defined empirically based on data analysis.  
-Tiers names are: commoner, up-and-coming, established, star and icon.
+**There are 5 tiers: commoner, up-and-coming, established, star and icon.**
 
 ### Twitter
 
@@ -65,3 +65,5 @@ Tiers names are: commoner, up-and-coming, established, star and icon.
 |:----------------------------------:|:-------------:|:---------------:|:-------------:|:--------:|:-------:|
 |  neither sponsored nor sponsoring  |   commoner    |  up-and-coming  |  established  |   star   |  icon   |
 |       sponsors or sponsoring       |  established  |   established   |  established  |   star   |  icon   |
+
+![img.png](plots/github/reputation_final.png)
