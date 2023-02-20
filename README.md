@@ -39,15 +39,15 @@ Specific reputation algorithms for each provider were defined empirically based 
 
 ### Twitter
 
-|followers|    < 100    |< 1k|< 10k|< 100k|  100k+   |
-|:-----------------:|:-----------:|:---:|:----:|:----:|:--------:|
-|is likely bot (botometer `cap` >= 0.95)|  commoner   |commoner|commoner|commoner| commoner |
-|is likely not bot (botometer `cap` < 0.95) & not verified|  commoner   |up-and-coming|established|star|   icon   |
-|is likely not bot (botometer `cap` < 0.95) & not verified|  commoner   |up-and-coming|established|star|   icon   |
-|is likely not bot (botometer `cap` < 0.95) & verified| established |established|established|star|   icon   |
+|                         followers                         |    < 100    |     < 1k      |    < 10k    |  < 100k  |  100k+   |
+|:---------------------------------------------------------:|:-----------:|:-------------:|:-----------:|:--------:|:--------:|
+|          is likely bot (botometer `cap` >= 0.95)          |  commoner   |   commoner    |  commoner   | commoner | commoner |
+| is likely not bot (botometer `cap` < 0.95) & not verified |  commoner   | up-and-coming | established |   star   |   icon   |
+| is likely not bot (botometer `cap` < 0.95) & not verified |  commoner   | up-and-coming | established |   star   |   icon   |
+|   is likely not bot (botometer `cap` < 0.95) & verified   | established |  established  | established |   star   |   icon   |
 
 #### Tiers distribution simulation results
-![img.png](plots/twitter/twitter_rep_sim_final.png)
+![img.png](plots/twitter/reputation_final.png)
 
 ### Reddit
 
@@ -57,7 +57,7 @@ Specific reputation algorithms for each provider were defined empirically based 
 |is not gold|   commoner    |up-and-coming|established|star| icon  |
 
 #### Tiers distribution simulation results
-![img.png](plots/reddit/reddit_final.png)
+![img.png](plots/reddit/reputation_final.png)
 
 ### GitHub
 
@@ -65,5 +65,7 @@ Specific reputation algorithms for each provider were defined empirically based 
 |:----------------------------------:|:-------------:|:---------------:|:-------------:|:--------:|:-------:|
 |  neither sponsored nor sponsoring  |   commoner    |  up-and-coming  |  established  |   star   |  icon   |
 |       sponsors or sponsoring       |  established  |   established   |  established  |   star   |  icon   |
+
+#### Tiers distribution simulation results
 
 ![img.png](plots/github/reputation_final.png)
